@@ -1,0 +1,78 @@
+Running the code:
+LANGUAGE CODED: JavaSE-1.7
+1. compile use javac and execute without any command line arguments
+2. If we select to create binary file, the program would ask to enter the CSV file name path or if it is in the same directory as the code then just enter the csv file name with extension.
+3. We can query for fields using option (2).
+4. If we try to go to option(2) before creating the binary, index files, then the program with throw back to the main menu asking to create binary files first.
+5. Use option(3) to exit the program.
+
+Sample run of the program is shown below:
+
+$ javac MyDatabase.java
+$ java MyDatabase
+Program started ...
+
+Enter option:
+1. Convert CSV to binary file
+2. Query based on fields
+3. Exit program.
+Enter your option:1
+Enter the csv file path:
+PHARMA_TRIALS_1000B.csv
+
+Serialized HashMap data is saved in id.ndx
+Serialized HashMap data is saved in company.ndx
+Serialized HashMap data is saved in drug_id.ndx
+Serialized HashMap data is saved in trials.ndx
+Serialized HashMap data is saved in patients.ndx
+Serialized HashMap data is saved in dosage_mg.ndx
+Serialized HashMap data is saved in reading.ndx
+Serialized HashMap data is saved in double_blind.ndx
+Serialized HashMap data is saved in controlled_study.ndx
+Serialized HashMap data is saved in govt_funded.ndx
+Serialized HashMap data is saved in fda_approved.ndx
+binary file, indexes created successfully.
+
+Enter option:
+1. Convert CSV to binary file
+2. Query based on fields
+3. Exit program.
+Enter your option:2
+
+Choose from any one of the fields below
+1. id
+2. company
+3. drug_id
+4. trials
+5. patients
+6. dosage_mg
+7. reading
+8. double_blind
+9. controlled_study
+10. govt_funded
+11. fda_approved
+Enter your option:1
+
+Chose the comparison operation
+1. =
+2. >
+3. <
+4. >=
+5. <=
+6. !=
+Enter your option:1
+
+Enter the field value:
+897
+
+Querying for 'id' = 897
+897 Dasan E&T Co., Ltd. LE-111 16 2029 479 95.2 true false true false 
+
+exiting querying
+
+Enter option:
+1. Convert CSV to binary file
+2. Query based on fields
+3. Exit program.
+Enter your option:
+
